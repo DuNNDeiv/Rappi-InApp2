@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In-App #2</title>
+
+  <style>
+    @font-face {
+      font-family: SequelSerif;
+      src: url(font/Sequel\ Sans\ Book\ Head.ttf) format(truetype);
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: SequelSerif;
+      src: url(font/Sequel\ Sans\ Roman\ Head.ttf) format(truetype);
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: SequelSerif;
+      src: url(font/Sequel\ Sans\ Medium\ Head.ttf) format(truetype);
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: SequelSerif;
+      src: url(font/Sequel\ Sans\ Semi\ Bold\ Head.ttf) format(truetype);
+      font-weight: 600;
+      font-style: normal;
+    }  
+    @font-face {
+      font-family: SequelSerif;
+      src: url(font/Sequel\ Sans\ Bold\ Head.ttf) format(truetype);
+      font-weight: 700;
+      font-style: normal;
+    }
+
+
+    * {
+      box-sizing: border-box;
+    }
+    .overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      aspect-ratio: 4 / 5;
+      width: 320px;
+      height: 400px;
+      background-image: url(img/bg_white.png);
+      display: flex;
+      flex-direction: column;
+      border-radius: 22px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .container__logo {
+      margin: 25px auto 22px;
+    }
+    .title_container {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .title_txt {
+      text-align: center;
+      width: 50%;
+      position: absolute;
+      color: #ffffff;
+      font-family: SequelSerif, sans-serif;
+      font-weight: 600;
+      font-size: 1.019rem;
+    }
+    .content_container{
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .bg_frame{
+      position: absolute;
+      left: 45px;
+      margin-top: 44px;
+    }
+    .earning_content {
+      color: #000;;
+      margin-left: 74px;
+      margin-top: 30px;
+    }
+    .subtitle {
+      font-family: SequelSerif, sans-serif;
+      font-weight: 400;
+      font-size: 1.111rem;
+      width: 50%; 
+      margin: 0;
+      line-height: 0.8;
+    }
+    .highlight_subtitle{
+      font-family: SequelSerif, sans-serif;
+      font-weight: 700;
+      font-size: 1.389rem;
+    }
+    .amount_content {
+      font-family: SequelSerif, sans-serif;
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+    .amount_txt {
+      margin-top: 16px;
+    }
+    .gift_img {
+      position: absolute;
+      right: 10px;
+      bottom: -65px;
+    }
+    .btn_container{
+      display: flex;
+      flex-direction: column;
+      margin-top: 70px;
+    }
+    .container__subtxt {
+      color: #898989;
+      font-family: SequelSerif, sans-serif;
+      font-weight: 300;
+      font-size: 0.556rem;
+      margin: 0 auto;
+    }
+
+    .container__btn {
+      text-decoration: none;
+      color: inherit;
+      color: #ffffff;
+      padding: 10px 15px;
+      background-color: #000;
+      font-size: 0.833rem;
+      font-family: SequelSerif, sans-serif;
+      font-weight: 500;
+      border-radius: 85px;
+      margin: 10px auto;
+    }
+    
+  </style>
+</head>
+<body class="overlay">  
+  <div class="container">
+    <img src="img/black_logo.png" alt="" class="container__logo">
+    <div class="title_container">
+      <img src="img/flag_title.png" alt="" class="title_flag">
+      <h1 class="title_txt">San RappiCuenta flechó tu bolsillo</h1>
+    </div>
+    <div class="content_container">
+      <img src="img/frame.png" alt="" class="bg_frame">
+      <div class="earning_content">
+        <h2 class="subtitle">Este mes <span class="highlight_subtitle"> rentaste </span></h2>
+        <div class="amount_content">
+          <h3 class="amount_txt">XXXXX</h3>
+        </div>
+        <img src="img/gift_img.png" alt="" class="gift_img">
+      </div>
+    </div>
+    <div class="btn_container">
+      <a href="#" class="container__btn">Abrir RappiCuenta</a>
+      <h4 class="container__subtxt">Aplican T&C</h4>
+    </div>
+  </div>
+</body>
+</html>
